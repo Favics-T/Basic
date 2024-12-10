@@ -8,7 +8,7 @@ const Hassle = () => {
     <div className='bg-'>
 
     
-    <div className='bg-gray-200  rounded-xl p-10 h-42 w-auto mr-11 mt-16 mb-11  ml-10 flex'>
+    <div className='bg-gray-200 mt-56  rounded-xl p-10 h-42 w-auto mr-11 mt-16 mb-11  ml-10 flex'>
       
       <div className='ml flex'>
       <LocalShippingOutlinedIcon className='w-6 h-48' />

@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteItem, resetCart,increment,decrement } from '../redux/homsSlice';
+import emptyCart from '../assets/emptyCart.png'
+import {Link} from 'react-router-dom' 
+
+
 
 const Cart = () => {
     const dispatch = useDispatch()
@@ -15,7 +19,9 @@ const Cart = () => {
    },[data])
   return (
     <div className=' w-full bg-gray-100 p-4'>
-        <div className='container mx-auto h-auto grid grid-cols-5 gap-8'>
+       {
+        data.length > 0 ? (
+            <div className='container mx-auto h-auto grid grid-cols-5 gap-8'>
             <div className='w-full h-full bg-white px-4 col-span-4'>
         <div className='font-titleFont flex items-center justify-between border-b-[1px] border-b-gray-400 py-3'>
             <h2 className='text-3xl font-medium'>Shopping Cart </h2>
@@ -120,11 +126,34 @@ const Cart = () => {
             </button>
         </div>
         </div>
+        )
+        : <div className='flex mx-96'>
+            
+            <img
+             src={emptyCart}
+              alt="cart"
+              className=''/>
+
+           <div className='mx-20'>
+           <div className='mt-20 mb-20 '>
+            
+           <h2
+            className=' font-medium'>Your Cart Feels Empty </h2>
+             <p className='font-thin'>Your Shopping Cart lives to serve. Give it purpose fill it with
+                dress,electronics  </p> 
+            </div>  
+
+                <Link to='/shop'>
+                <button
+            className='bg-[#000b58] w-80 rounded-xl text-white p-2 '>Continue Shopping</button>
+                </Link>
+           
+           </div>
+        </div>
+       }
      
    
-   <div>
-    <img className='h-96' src="" alt="" />
-   </div>
+  
     
     </div>
   )

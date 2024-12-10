@@ -6,7 +6,7 @@ import XIcon from '@mui/icons-material/X';
 
 const Footer = () => {
   return (
-    <div className='mt-10'>
+    <div className='mt-10 text-black'>
 
         <div className='bg-blue-100 text-black
 
@@ -16,7 +16,7 @@ const Footer = () => {
         {/* CUSTOMER SERVICE STARTS HERE */}
         
             <div className='footer flex-col-reverse'>
-                <h1 className='text-black font-bold'>CUSTOMER SERVICE</h1>
+                <h1 className='text-black mb-5 font-bold'>CUSTOMER SERVICE</h1>
                 <ul>
                     <li>Service Hours:
 
@@ -44,7 +44,7 @@ const Footer = () => {
 
 
          <div className='footer flex-col-reverse'>
-                <h1 className='text-white font-bold'> ABOUT</h1>
+                <h1 className='text-black mb-5 font-bold'> ABOUT</h1>
                 <ul>
                     <li>About Us</li>
                     <li>Where to Buy</li>
@@ -60,7 +60,7 @@ const Footer = () => {
          {/* Terms STARTS HERE */}
         
          <div className='footer flex-col-reverse'>
-                <h1 className='text-white font-bold'> TERMS</h1>
+                <h1 className='text-ite font-bold mb-5'> TERMS</h1>
                 <ul>
                 <li>Warranty</li>
                 <li>Shipping & Delivery</li>
@@ -75,7 +75,7 @@ const Footer = () => {
 
          {/* HELP STARTS HERE */}
          <div className='footer flex-col-reverse'>
-                <h1 className='text-white font-bold'> HELP</h1>
+                <h1 className='text-wite font-bold mb-5'> HELP</h1>
 
                 <ul>
                     <li> Get Help</li>
